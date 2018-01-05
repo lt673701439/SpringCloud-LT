@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lt</groupId>
-	<artifactId>eureka-consumer</artifactId>
+	<artifactId>eureka-consumer-feign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>eureka-consumer</name>
-	<description>Demo project for consumer</description>
+	<name>eureka-consumer-feign</name>
+	<description>Demo project for eureka-consumer-feign</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

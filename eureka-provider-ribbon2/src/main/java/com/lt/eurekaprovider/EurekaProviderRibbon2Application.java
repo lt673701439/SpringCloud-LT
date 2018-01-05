@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaProviderRibbonApplication {
+public class EurekaProviderRibbon2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaProviderRibbonApplication.class, args);
+		SpringApplication.run(EurekaProviderRibbon2Application.class, args);
 	}
 }

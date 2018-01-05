@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EurekaProviderRibbonApplicationTests {
+public class EurekaProviderRibbon2ApplicationTests {
 
 	@Test
 	public void contextLoads() {

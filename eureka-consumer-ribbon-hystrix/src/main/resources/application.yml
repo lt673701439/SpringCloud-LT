@@ -1,8 +1,8 @@
 spring:
   application:
-    name: eureka-consumer-ribbon
+    name: eureka-consumer-ribbon-hystrix
 server:
-  port: 3002
+  port: 6001
 
 eureka:
   client:

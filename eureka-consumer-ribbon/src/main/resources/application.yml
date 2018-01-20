@@ -2,9 +2,9 @@ spring:
   application:
     name: eureka-consumer-ribbon
 server:
-  port: 3002
+  port: 3332
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+      defaultZone: http://localhost:1111/eureka/

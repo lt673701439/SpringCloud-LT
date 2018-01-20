@@ -3,9 +3,9 @@ spring:
     name: eureka-provider-ribbon
 #单机测试时端口不同
 server:
-  port: 2003
+  port: 2223
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+      defaultZone: http://localhost:1111/eureka/

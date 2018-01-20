@@ -7,4 +7,4 @@ spring:
         git:
           uri: https://github.com/lt673701439/SpringCloud-LT-Config.git
 server:
-  port: 4001
+  port: 4441

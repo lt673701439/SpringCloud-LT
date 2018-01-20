@@ -2,9 +2,9 @@ spring:
   application:
     name: eureka-consumer-ribbon-hystrix
 server:
-  port: 6001
+  port: 6661
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+      defaultZone: http://localhost:1111/eureka/

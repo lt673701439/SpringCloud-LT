@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 1112
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port} # 将实例名称换为ip地址
+  server:
+    enable-self-preservation: false # 开发阶段设为false，关闭自我保护，
+    eviction-interval-timer-in-ms: 5000 # 清理间隔（单位毫秒，默认是60*1000）
+  client:
+# 单服务时使用
+#    register-with-eureka: false # 是否注册到列表
+#    fetch-registry: false
+# 集群情况使用，注册到其他注册中心
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/

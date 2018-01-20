@@ -2,9 +2,9 @@ spring:
   application:
     name: api-gateway
 server:
-  port: 7001
+  port: 7771
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+      defaultZone: http://localhost:1111/eureka/

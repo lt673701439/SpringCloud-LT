@@ -8,5 +8,5 @@ eureka:
   client:
     serviceUrl:
 #     单服务注册中心时使用
-#     defaultZone: http://localhost:1111/eureka/
-      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/
+     defaultZone: http://localhost:1111/eureka/
+#      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/

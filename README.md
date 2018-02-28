@@ -16,14 +16,14 @@
 #### 4.分布式配置中心 config
 #### 启动 eureka-server-one、config-server、config-client
 
-#### 5.服务注册发现、负载均衡、服务降级 eureka ribbon hystrix
+#### 5.服务注册发现、负载均衡、熔断保护 eureka ribbon hystrix
 #### 启动 eureka-server-one、eureka-provider、eureka-provider-ribbon-hystrix
 
 #### 6.服务网关
 #### 启动 eureka-server-one、eureka-provider、eureka-consumer、api-gateway
 
 #### 7.多个服务注册中心
-#### 修改了服务注册中心名称，之前的示例都变动了
+#### 修改了服务注册中心名称，之前的示例中都变动了,需要修改配置文件为集群模式
 #### 启动 eureka-server-one、eureka-server-two、eureka-provider、eureka-consumer
 
 #### didispace的博客地址

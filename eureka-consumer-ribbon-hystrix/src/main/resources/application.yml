@@ -1,8 +1,9 @@
+server:
+  port: 6661
+
 spring:
   application:
     name: eureka-consumer-ribbon-hystrix
-server:
-  port: 6661
 
 eureka:
   instance:

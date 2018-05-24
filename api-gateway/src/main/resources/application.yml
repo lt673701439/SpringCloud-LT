@@ -1,8 +1,9 @@
+server:
+  port: 7771
+
 spring:
   application:
     name: api-gateway
-server:
-  port: 7771
 
 eureka:
   instance:

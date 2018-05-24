@@ -1,3 +1,6 @@
+server:
+  port: 4441
+
 spring:
   application:
     name: config-server
@@ -5,6 +8,17 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/lt673701439/SpringCloud-LT-Config.git
-server:
-  port: 4441
+          # 配置git仓库的地址
+          uri: https://github.com/lt673701439/SpringCloud-LT
+          # git仓库地址下的相对地址，可以配置多个，用,分割。
+          search-paths: config-repo
+
+eureka:
+  client:
+  # 单服务注册中心时使用
+  # register-with-eureka: false # 是否注册到自身列表,默认true
+    fetch-registry: false # 是否从其它中心获取服务列表,默认true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  # 集群情况使用，注册到所有注册中心，包括自己
+  #      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/

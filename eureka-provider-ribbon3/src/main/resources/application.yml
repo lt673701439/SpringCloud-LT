@@ -1,9 +1,10 @@
-spring:
-  application:
-    name: eureka-provider-ribbon
 #单机测试时端口不同
 server:
   port: 2224
+
+spring:
+  application:
+    name: eureka-provider-ribbon
 
 eureka:
   instance:

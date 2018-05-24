@@ -17,8 +17,6 @@ spring:
 eureka:
   client:
   # 单服务注册中心时使用
-  #    register-with-eureka: false # 是否注册到自身列表,默认true
-    fetch-registry: false # 是否从其它中心获取服务列表,默认true
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
   # 集群情况使用，注册到所有注册中心，包括自己

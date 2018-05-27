@@ -10,11 +10,13 @@
 #### 启动 eureka-server-one、eureka-provider-ribbon1、eureka-provider-ribbon2、
 #### eureka-provider-ribbon3、eureka-consumer-ribbon
 
-#### 3.服务间接口调用
+#### 3.服务间接口调用 feign
 #### 启动 eureka-server-one、eureka-provider、eureka-consumer-feign
 
 #### 4.分布式配置中心 config
 #### 启动 eureka-server-one、config-server、config-client
+#### 注意：config-client 的配置文件一定要用bootstrap.yml 或bootstrap.properties
+#### 否则启动报错，找不到配置信息
 
 #### 5.服务注册发现、负载均衡、熔断保护 eureka ribbon hystrix
 #### 启动 eureka-server-one、eureka-provider、eureka-provider-ribbon-hystrix
@@ -25,7 +27,8 @@
 #### 7.多个服务注册中心
 #### 修改了服务注册中心名称，之前的示例中都变动了,需要修改配置文件为集群模式
 #### 启动 eureka-server-one、eureka-server-two、eureka-provider、eureka-consumer
-
+#
+#
 #### didispace的博客地址
 #### http://blog.didispace.com/Spring-Cloud%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
 #### 方志朋的博客地址

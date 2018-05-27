@@ -12,6 +12,7 @@ class HelloController {
 
     @RequestMapping("/hello")
     public String from() {
+        System.out.println(this.hello);
         return this.hello;
     }
 }

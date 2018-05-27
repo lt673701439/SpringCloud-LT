@@ -4,14 +4,21 @@ server:
 spring:
   application:
     name: config-server
+  # 使用本地配置文件代替git、svn
+  profiles:
+    active: native
+
   cloud:
     config:
       server:
-        git:
-          # 配置git仓库的地址
-          uri: https://github.com/lt673701439/SpringCloud-LT/
-          # git仓库地址下的相对地址，可以配置多个，用,分割。
-          search-paths: config-repo
+#        git:
+#          # 配置git仓库的地址
+#          uri: https://github.com/lt673701439/SpringCloud-LT/
+#          # git仓库地址下的相对地址，可以配置多个，用,分割。
+#          search-paths: config-repo
+        # 使用本地配置文件代替git、svn，可以配置多个，用,分割。
+        native:
+          searchLocations: classpath:/client/
 
 eureka:
   client:

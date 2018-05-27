@@ -6,10 +6,13 @@ spring:
     name: config-client
   cloud:
     config:
+      # name可以不写，默认使用服务id名(config-client)与配置文件前缀匹配
       name: client-config
       profile: dev
       label: master
+      # 以uri的方式访问配置中心
 #      uri: http://localhost:4441/
+      # 以配置中心服务名的方式访问配置
       discovery:
         enabled: true
         service-id: config-server
